@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="default_left_arc_color">#ff4abf</color>
+    <color name="default_right_arc_color">#7ef953</color>
+    <color name="default_bottom_line_color">#2076ff</color>
+</resources>

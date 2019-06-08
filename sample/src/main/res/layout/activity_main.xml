@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/base_padding"
+    tools:context=".MainActivity">
+
+    <com.blakezheng.widget.cordiformview.CordiformView
+        android:id="@+id/cordiform_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        app:strokeWidth="30dp"
+        app:leftInnerText="HeartRate"
+        app:rightInnerText="Steps"
+        app:bottomInnerText="Sleep"
+        app:innerTextSize="15sp"
+        app:outerTextSize="15sp"
+        app:outerTextOffset="4dp"
+        app:leftOuterText="68bpm"
+        app:rightOuterText="5600"
+        app:bottomOuterText="7hrs"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cordiform_view"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/base_padding"
+        android:paddingBottom="@dimen/base_padding">
+        <TextView
+            android:id="@+id/left_progress"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Left"/>
+        <SeekBar
+            android:id="@+id/left_progress_seek_bar"
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cordiform_view"
+            android:max="100" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cordiform_view"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/base_padding"
+        android:paddingBottom="@dimen/base_padding">
+        <TextView
+            android:id="@+id/right_progress"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Right"/>
+        <SeekBar
+            android:id="@+id/right_progress_seek_bar"
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cordiform_view"
+            android:max="100" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cordiform_view"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/base_padding"
+        android:paddingBottom="@dimen/base_padding">
+        <TextView
+            android:id="@+id/bottom_progress"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Bottom"/>
+        <SeekBar
+            android:id="@+id/bottom_progress_seek_bar"
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cordiform_view"
+            android:max="100" />
+    </LinearLayout>
+
+</LinearLayout>
