@@ -3,8 +3,8 @@ CordiformView
 
 A cordiform android view which hold three progress bar for overview of underway plan,especially for healthy imformation, imitating the widget from Samsung Health(Tizen version)
 
-![CordiformView](https://raw.github.com/BlackZheng/CordiformView/master/screenshot1.jpg) 
-![CordiformView](https://raw.github.com/BlackZheng/CordiformView/master//screenshot2.gif)
+![CordiformView](https://raw.github.com/BlackZheng/CordiformView/master/Screenshot1.jpg) 
+![CordiformView](https://raw.github.com/BlackZheng/CordiformView/master//Screenshot2.gif)
 
 Gradle
 ------
